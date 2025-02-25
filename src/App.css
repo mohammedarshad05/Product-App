@@ -10,7 +10,7 @@ body, html {
 }
 
 .container, .navbar, .hero, .main {
-  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background for readability */
+  background: rgba(93, 89, 89, 0.156);
   border-radius: 10px;
   padding: 20px;
 }

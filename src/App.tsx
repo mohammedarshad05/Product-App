@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
 import ProductList from "./components/ProductList";
+import Home from "./components/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -18,7 +19,6 @@ function App() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                   <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <Link className="nav-link" to="/product">Product List</Link>
                     </li>
                   </ul>
                   <form className="d-flex">
@@ -42,7 +42,8 @@ function App() {
         <main className="main">
           <div className="container my-5">
             <Routes>
-              <Route path="/" element={<ProductList />} />
+              <Route path="/product" element={<ProductList />} />
+              <Route path="/" element={<Home />} />
             </Routes>
           </div>
         </main>
