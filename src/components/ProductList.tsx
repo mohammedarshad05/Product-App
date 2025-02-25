@@ -42,7 +42,7 @@ const ProductList = () => {
   return (
     <div className="container">
     <div className="row">
-      <h2>🏬 product Lists</h2>
+      <h2>👚 product Lists</h2>
         {products.map((product) => (
             <div className="col-md-4" key={product.id}>
                 <div className="card mb-4 ">
