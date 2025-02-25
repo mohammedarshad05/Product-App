@@ -1,6 +1,16 @@
-header {
-  background-color: rgb(125, 125, 215);
-  padding: 10px;
-  text-align: center;
-  margin: 0 auto;
+/* App.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url('/src/assets/makeup.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container, .navbar, .hero, .main {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background for readability */
+  border-radius: 10px;
+  padding: 20px;
 }

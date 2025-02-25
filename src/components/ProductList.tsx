@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState,useEffect } from "react";
+import { Link } from "react-router-dom";
+
 
 interface Product {
   id: number;
   title: string;
-  thumbnail: string; // Updated from 'image' to 'thumbnail'
+  thumbnail: string; 
   description: string;
   category: string;
   price: number;
@@ -50,7 +52,7 @@ const ProductList = () => {
                         <p className="card-text">{product.category}</p>
                         <p className="card-text">{product.description}</p>
                         <p className="card-text">{product.price}</p>
-                        {/* <Link className="btn btn-outline-primary" to={`/products/${recipe.id}`}>🍴{recipe.name}</Link> */}
+                        <Link className="btn btn-outline-primary" to={`/products/${product.id}`}>🍴{product.title}</Link>
                         </div>
                 </div>
             </div>
