@@ -51,7 +51,7 @@ const ProductList = () => {
                   alt="..."
                 />
                 <p className="card-text">{product.category}</p>
-                <p className="card-text">{product.price}</p>
+                <p className="card-text">${product.price}</p>
                 <Link
                   className="btn btn-outline-primary"
                   to={`/products/${product.id}`}

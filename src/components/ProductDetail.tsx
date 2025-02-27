@@ -37,7 +37,7 @@ const ProductDetails: React.FC = () => {
           <h2 className="card-title text-danger">{product.title}</h2>
           <p className="card-text">{product.description}</p>
           <p className="card-text">Category: {product.category}</p>
-          <p className="card-text"> Price: {product.price}</p>
+          <p className="card-text"> Price: ${product.price}</p>
           <Link to="/products" className="btn btn-primary mt-4">
             - Back to Products
           </Link>
