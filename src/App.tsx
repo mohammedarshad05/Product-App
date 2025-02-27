@@ -3,6 +3,7 @@ import "./App.css";
 import ProductList from "./components/ProductList";
 import Home from "./components/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ProductDetails from "./components/ProductDetail";
 
 function App() {
   return (
@@ -35,14 +36,16 @@ function App() {
           <div className="container">
             <h1 className="display-4">Welcome to My Store</h1>
             <p className="lead">Your one-stop shop for all your needs.</p>
-            <Link to="/product" className="btn btn-primary btn-lg">Browse Products</Link>
+            <Link to="/products" className="btn btn-primary btn-lg">Browse Products</Link>
+
           </div>
         </section>
 
         <main className="main">
           <div className="container my-5">
             <Routes>
-              <Route path="/product" element={<ProductList />} />
+              <Route path="/products" element={<ProductList />} />
+              <Route path="products/:id" element={<ProductDetails />} />
               <Route path="/" element={<Home />} />
             </Routes>
           </div>
